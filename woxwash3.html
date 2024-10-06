@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=393, initial-scale=1.0">
+    <title>Frame 3 - Laundry Admin Login</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            width: 393px;
+            height: 844px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .laundry-admin-login-container {
+            max-width: 393px;
+            width: 100%;
+            height: 844px;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow: hidden;
+            padding: 131px 0;
+            font-weight: 700;
+        }
+
+        .header {
+            background-color: #d9d9d9;
+            align-self: stretch;
+            display: flex;
+            width: 100%;
+            gap: 20px;
+            font-size: 15px;
+            justify-content: space-between;
+            padding: 7px 15px;
+        }
+
+        .logo {
+            aspect-ratio: 1.13;
+            object-fit: contain;
+            width: 43px;
+        }
+
+        .header-title {
+            margin: auto 0;
+        }
+
+        .avatar {
+            aspect-ratio: 1.09;
+            object-fit: contain;
+            width: 96px;
+            margin-top: 5px;
+        }
+
+        .login-form {
+            background-color: #d3dddf;
+            box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+            display: flex;
+            margin-top: 6px;
+            width: 100%;
+            max-width: 295px;
+            flex-direction: column;
+            align-items: start;
+            font-size: 12px;
+            line-height: 22px;
+            padding: 63px 41px;
+        }
+
+        .form-label {
+            line-height: 2;
+        }
+
+        .form-input {
+            background-color: #fff;
+            box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+            align-self: stretch;
+            display: flex;
+            height: 31px;
+            margin-top: 17px;
+        }
+
+        .submit-button {
+            background-color: #ade499;
+            box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+            align-self: center;
+            margin-top: 71px;
+            width: 157px;
+            max-width: 100%;
+            white-space: nowrap;
+            padding: 7px 58px;
+            border: 1px solid #6c706b;
+            cursor: pointer;
+        }
+
+        .back-button {
+            background-color: #f3f3f3;
+            border: none;
+            color: #000;
+            cursor: pointer;
+            padding: 10px 20px;
+            margin-top: 20px;
+        }
+
+        .visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+    <section class="laundry-admin-login-container">
+        <header class="header">
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/3bd96beca5e6d946065ee240fcf9817088b098d4d32fb58b20ecfaa225833af5" alt="Laundry Admin Logo" class="logo">
+            <h1 class="header-title">Laundry Admin Login</h1>
+        </header>
+        
+        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/ef5ca196330087571710ead7975e250f7ded3919b91b5033c4ff2ca69a1f60a6" alt="User Avatar" class="avatar">
+        
+        <form class="login-form" id="adminLoginForm">
+            <label for="name" class="form-label">Name :</label>
+            <input type="text" id="name" class="form-input" required>
+            
+            <label for="email" class="form-label">Email id :</label>
+            <input type="email" id="email" class="form-input" required>
+            
+            <label for="phone" class="form-label">Phone no:</label>
+            <input type="tel" id="phone" class="form-input" required>
+            
+            <label for="password" class="form-label">Password :</label>
+            <input type="password" id="password" class="form-input" required>
+            
+            <button type="submit" class="submit-button">Submit</button>
+        </form>
+
+        <!-- Back Button -->
+        <button class="back-button" onclick="window.location.href='woxwash.html';">Back</button>
+    </section>
+
+    <script>
+        // Redirect to the next frame on submit
+        document.getElementById('adminLoginForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent default form submission
+            window.location.href = 'woxwash5.html'; // Redirect to Frame 5
+        });
+    </script>
+</body>
+</html>

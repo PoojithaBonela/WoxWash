@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=393, initial-scale=1.0">
+    <title>Frame 2 - Student Login</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            width: 393px;
+            height: 844px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .student-login-container {
+            max-width: 393px;
+            width: 100%;
+            height: 844px;
+            margin: 0 auto;
+            padding: 50px 0;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow: hidden;
+            color: #000;
+            font-weight: 700;
+        }
+
+        .header {
+            background-color: #d9d9d9;
+            align-self: stretch;
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            padding: 5px 10px;
+        }
+
+        .logo {
+            aspect-ratio: 1.43;
+            object-fit: contain;
+            width: 60px;
+        }
+
+        .header-title {
+            margin: auto 0;
+            font-size: 15px;
+            line-height: 1;
+        }
+
+        .profile-image {
+            aspect-ratio: 1;
+            object-fit: contain;
+            width: 78px;
+            margin-top: 5px;
+        }
+
+        .login-form {
+            background-color: #d3dddf;
+            box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+            display: flex;
+            margin-top: 16px;
+            width: 100%;
+            max-width: 295px;
+            flex-direction: column;
+            align-items: start;
+            font-size: 12px;
+            line-height: 22px;
+            padding: 45px 41px;
+        }
+
+        .form-label {
+            line-height: 2;
+        }
+
+        .form-input {
+            background-color: #fff;
+            box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+            align-self: stretch;
+            display: flex;
+            height: 31px;
+            margin-top: 12px;
+        }
+
+        .submit-button {
+            background-color: #ade499;
+            box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+            align-self: center;
+            margin-top: 29px;
+            width: 157px;
+            max-width: 100%;
+            white-space: nowrap;
+            padding: 7px 58px;
+            border: 1px solid #6c706b;
+            cursor: pointer;
+        }
+
+        .back-button {
+            background-color: #f3f3f3;
+            border: none;
+            color: #000;
+            cursor: pointer;
+            padding: 10px 20px;
+            margin-top: 20px;
+        }
+
+        .visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0 0 0 0);
+            white-space: nowrap;
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+    <section class="student-login-container">
+        <header class="header">
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/e46c2d42965d9855c24e6154062f5f46ae35303414999e166a5bb2bc3a050c2f" alt="University logo" class="logo">
+            <h1 class="header-title">Student Login</h1>
+        </header>
+
+        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/d69f82fb269ebaa8b22ebd3f77e09e7fe67084b0087e7a926dd4c0eb9a23c516" alt="Student profile placeholder" class="profile-image">
+
+        <form class="login-form" id="studentLoginForm">
+            <label for="name" class="form-label">Name :</label>
+            <input type="text" id="name" class="form-input" required>
+
+            <label for="student-id" class="form-label">Student ID :</label>
+            <input type="text" id="student-id" class="form-input" required>
+
+            <label for="block-room" class="form-label">Block / Room no:</label>
+            <input type="text" id="block-room" class="form-input" required>
+
+            <label for="phone" class="form-label">Phone no:</label>
+            <input type="tel" id="phone" class="form-input" required>
+
+            <label for="gender" class="form-label">Gender:</label>
+            <select id="gender" class="form-input" required>
+                <option value="">Select gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <button type="submit" class="submit-button">Submit</button>
+        </form>
+
+        <!-- Back Button -->
+        <button class="back-button" onclick="window.location.href='woxwash.html';">Back</button>
+    </section>
+
+    <script>
+        // Redirect to the next frame on submit
+        document.getElementById('studentLoginForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent default form submission
+            window.location.href = 'woxwash4.html'; // Redirect to Frame 4
+        });
+    </script>
+</body>
+</html>
